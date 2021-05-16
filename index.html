@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+        <title>Belly Button Biodiversity</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Belly Button Biodiversity</h1>
+                <h2 class="text-center">Dashboard</h2>
+                <p class="text-center">Use the interactive charts below to explore the dataset</p>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6>Test Subject ID No:</h6>
+                                    <div class="input-group">
+                                        <select id="subjects-select" name="">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">&nbsp;</div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card border border-info">
+                                <div class="card-header bg-info">
+                                    <h6 class="text-white">Demographic Info</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>ID: <span id="subject-id">&nbsp;</span></p>
+                                    <p>Ethnicity: <span id="subject-ethnicity">&nbsp;</span></p>
+                                    <p>GENDER: <span id="subject-gender">&nbsp;</span></p>
+                                    <p>AGE: <span id="subject-age">&nbsp;</span></p>
+                                    <p>LOCATION: <span id="subject-location">&nbsp;</span></p>
+                                    <p>BBTYPE: <span id="subject-bbtype">&nbsp;</span></p>
+                                    <p>WFREQ: <span id="subject-wfreq">&nbsp;</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5"><div id="bar">&nbsp;</div></div>
+                <div class="col-5">
+                    <div id="gauge"><h6 class="text-center">Belly Button Washing Frequency</h6></div>
+                </div>
+            </div>
+            <div class="row"><div class="col-12" id="bubble">&nbsp;</div></div>
+        </div>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="plot.js"></script>
+    </body>
+</html>
